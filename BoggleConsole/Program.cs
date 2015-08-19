@@ -35,30 +35,26 @@ namespace Harness
                         Int32 boards = Int32.Parse(Console.ReadLine());
 
                         byte[][,] b;
-                        String modeText;
                         switch (boardSource)
                         {
                             case "r":
                                 {
                                     b = Solver.GetRandomBoards(boards, 4);
-                                    modeText = "from random letters";
                                     break;
                                 }
                             case "f":
                                 {
                                     b = Solver.GetBoardsFromFile(BoggleLibrary.Properties.Settings.Default.DefaultBoardsFile, boards);
-                                    modeText = "from file";
                                     break;
                                 }
                             default:
                                 {
                                     b = Solver.GetBoards(boards);
-                                    modeText = "from boggle dice";
                                     break;
                                 }
                         }
 
-                        Console.WriteLine(boards + " boards generated " + modeText);
+                        Console.WriteLine(boards + " boards generated");
 
                         // Solve boards
                         int words = 0, score = 0;
