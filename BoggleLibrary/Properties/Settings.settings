@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BoggleLibrary.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultDictionaryFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sowpods.txt</Value>
+    </Setting>
+    <Setting Name="DefaultBoardsFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">test-boards.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
