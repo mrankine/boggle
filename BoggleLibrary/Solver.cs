@@ -86,7 +86,7 @@ namespace BoggleLibrary
 
         #region Load Dictionary
         /// <summary>
-        /// Load the default dictionary from the current working directory.
+        /// Load the default dictionary from the directoruy of the executing assembly.
         /// </summary>
         public void LoadDictionary()
         {
