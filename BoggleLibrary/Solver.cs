@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Collections;
+using System.Reflection;
 
 namespace BoggleLibrary
 {
@@ -89,7 +90,7 @@ namespace BoggleLibrary
         /// </summary>
         public void LoadDictionary()
         {
-            String dir = Directory.GetCurrentDirectory();
+            String dir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
             String file = Properties.Settings.Default.DefaultDictionaryFile;
             String path = Path.Combine(dir, file);
             LoadDictionary(path);
